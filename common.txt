@@ -1,0 +1,16 @@
+kubectl explain pod.spec | more
+kubectl explain pod.spec.containers | more
+
+
+kubectl run abc --image=kodekloud/event-simulator --dry-run=client -o yaml > q4.yml
+
+
+kubectl create configmap nginx-configuration --namespace ingress-space
+
+kubectl create serviceaccount ingress-serviceaccount --namespace ingress-space
+kubectl get roles,rolebindings --namespace ingress-space
+
+kubectl expose deployment -n ingress-space ingress-controller --type=NodePort --port=80 --name=ingress --dry-run -o yaml >ingress.yaml
+
+
+kubectl get all --all-namespaces
