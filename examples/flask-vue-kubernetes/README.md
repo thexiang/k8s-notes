@@ -1,8 +1,8 @@
 # Note
 
-this is a copy of https://testdriven.io/running-flask-on-kubernetes
-added couple files to enable this code runs on k3d,
-once we make sure docker image are already pushed, we can just run following command to spin up the cluster
+this is a copy of https://testdriven.io/running-flask-on-kubernetes  
+added couple files to enable this code runs on k3d,  
+once we make sure docker image are already pushed, we can just run following command to spin up the cluster  
 
 ```sh
 bash deploy-k3s.sh
